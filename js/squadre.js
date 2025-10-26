@@ -1,7 +1,7 @@
 import { squadre } from './data.js';
-import { calcolaMarcatori } from './utils.js';
 
 const container = document.querySelector('#teams-list');
+
 function render(){
   container.innerHTML = '';
   squadre.forEach(s=>{
@@ -13,3 +13,4 @@ function render(){
 }
 
 render();
+
