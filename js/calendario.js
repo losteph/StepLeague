@@ -23,7 +23,7 @@ function renderPlayoff(){
   playoff.forEach(p=>{
     const score = (p.golCasa == null) ? '-' : `${p.golCasa} - ${p.golTrasferta}`;
     const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${p.fase}</td><td>${p.casa}</td><td>vs</td><td>${p.trasferta}</td><td>${score}</td>`;
+    tr.innerHTML = `<td>${p.data}</td><td>${p.casa}</td><td>vs</td><td>${p.trasferta}</td><td>${score}</td>`;
     bodyPlayoff.appendChild(tr);
   });
 }
