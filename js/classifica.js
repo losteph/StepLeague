@@ -2,6 +2,7 @@ import { squadre, partite } from './data.js';
 import { calcolaClassifica } from './utils.js';
 
 const tbody = document.querySelector('#table-classifica tbody');
+
 function render(){
   const cls = calcolaClassifica(squadre, partite);
   tbody.innerHTML = '';
@@ -14,5 +15,5 @@ function render(){
 
 render();
 
-// espone funzione per altre pagine
+// Export per riuso
 window.__torneo_render_classifica = render;
