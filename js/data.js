@@ -1,13 +1,13 @@
 
 export const squadre = [
   { nome: "Real Margherita", giocatori: [
-      { nome: "Luca Rossi", gol: 0, assist: 0, gialli: 0, rossi: 0 },
-      { nome: "Marco Bianchi", gol: 0, assist: 0, gialli: 0, rossi: 0 }
+      { nome: "Luca Rossi", gol: 1, assist: 1, gialli: 0, rossi: 0 },
+      { nome: "Marco Bianchi", gol: 2, assist: 0, gialli: 0, rossi: 0 }
     ]
   },
   { nome: "FC Birra", giocatori: [
-      { nome: "Andrea Verdi", gol: 0, assist: 0, gialli: 0, rossi: 0 },
-      { nome: "Simone Neri", gol: 0, assist: 0, gialli: 0, rossi: 0 }
+      { nome: "Andrea Verdi", gol: 3, assist: 0, gialli: 0, rossi: 0 },
+      { nome: "Simone Neri", gol: 1, assist: 0, gialli: 0, rossi: 0 }
     ]
   },
   { nome: "AS Oliva", giocatori: [
@@ -35,9 +35,9 @@ export const squadre = [
 // Partite: andata + ritorno (tutte le combinazioni). Imposta date e risultati qui.
 export const partite = [
   // Round 1 (esempi di date) - completa con le tue date
-  { id: 'm1', data: '2025-04-01', casa: 'Real Margherita', trasferta: 'FC Birra', golCasa: null, golTrasferta: null },
-  { id: 'm2', data: '2025-04-02', casa: 'AS Oliva', trasferta: 'CD Arancio', golCasa: null, golTrasferta: null },
-  { id: 'm3', data: '2025-04-03', casa: 'US Verde', trasferta: 'FC Azzurri', golCasa: null, golTrasferta: null },
+  { id: 'm1', data: '2025-04-01', casa: 'Real Margherita', trasferta: 'FC Birra', golCasa: 1, golTrasferta: 0 },
+  { id: 'm2', data: '2025-04-01', casa: 'AS Oliva', trasferta: 'CD Arancio', golCasa: 0, golTrasferta: 2 },
+  { id: 'm3', data: '2025-04-01', casa: 'US Verde', trasferta: 'FC Azzurri', golCasa: 3, golTrasferta: 3 },
   // Round 1 ritorno
   { id: 'm4', data: '2025-04-08', casa: 'FC Birra', trasferta: 'Real Margherita', golCasa: null, golTrasferta: null },
   { id: 'm5', data: '2025-04-09', casa: 'CD Arancio', trasferta: 'AS Oliva', golCasa: null, golTrasferta: null },
@@ -51,8 +51,8 @@ export const partite = [
 
 // Playoff (visualizzati in fondo al calendario). Puoi aggiornare le squadre e i risultati manualmente qui.
 export const playoff = [
-  { id: 'p1', fase: 'Semifinale 1', casa: '1ª Classificata', trasferta: '3ª Classificata', golCasa: null, golTrasferta: null },
-  { id: 'p2', fase: 'Semifinale 2', casa: '2ª Classificata', trasferta: '4ª Classificata', golCasa: null, golTrasferta: null },
-  { id: 'p3', fase: 'Finale 1°/2°', casa: 'Vincente S1', trasferta: 'Vincente S2', golCasa: null, golTrasferta: null },
-  { id: 'p4', fase: 'Finale 3°/4°', casa: 'Perdente S1', trasferta: 'Perdente S2', golCasa: null, golTrasferta: null }
+  { id: 'p1', data: 'Semifinale 1', casa: '1ª Classificata', trasferta: '3ª Classificata', golCasa: null, golTrasferta: null },
+  { id: 'p2', data: 'Semifinale 2', casa: '2ª Classificata', trasferta: '4ª Classificata', golCasa: null, golTrasferta: null },
+  { id: 'p3', data: 'Finale 1°/2°', casa: 'Vincente S1', trasferta: 'Vincente S2', golCasa: null, golTrasferta: null },
+  { id: 'p4', data: 'Finale 3°/4°', casa: 'Perdente S1', trasferta: 'Perdente S2', golCasa: null, golTrasferta: null }
 ];
