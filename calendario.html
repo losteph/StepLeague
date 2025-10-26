@@ -1,1 +1,42 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calendario - Torneo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Calendario</h1>
+    <nav>
+      <a href="index.html">Classifica</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="squadre.html">Squadre</a>
+      <a href="marcatori.html">Marcatori</a>
+      <a href="playoff.html">Playoff</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Partite</h2>
+      <table id="table-partite" class="table">
+        <thead><tr><th>Data</th><th>Casa</th><th></th><th>Trasferta</th><th>Risultato</th><th>Azioni</th></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <h3>Aggiungi / Modifica risultato</h3>
+      <form id="result-form">
+        <select id="match-select"></select>
+        <input type="number" id="gol-casa" min="0" placeholder="Gol casa">
+        <input type="number" id="gol-trasf" min="0" placeholder="Gol trasferta">
+        <button type="submit">Salva risultato</button>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="js/calendario.js"></script>
+</body>
+</html>
 
