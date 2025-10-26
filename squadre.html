@@ -1,35 +1,70 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Squadre - Torneo</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Squadre - Torneo</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1>Squadre</h1>
-    <nav>
-      <a href="index.html">Classifica</a>
-      <a href="calendario.html">Calendario</a>
-      <a href="squadre.html">Squadre</a>
-      <a href="marcatori.html">Marcatori</a>
-    </nav>
-  </header>
+<header class="site-header">
+<h1>Squadre</h1>
+<nav>
+<a href="index.html">Classifica</a>
+<a href="calendario.html">Calendario</a>
+<a href="squadre.html">Squadre</a>
+<a href="marcatori.html">Marcatori</a>
+</nav>
+</header>
 
-  <main class="container">
-    <section>
-      <table id="table-squadre" class="table">
-        <thead>
-          <tr>
-            <th>Giocatore</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </section>
-  </main>
 
-  <script type="module" src="js/squadre.js"></script>
+<main class="container">
+<section id="sezione-squadre">
+<!-- Ogni squadra verrà generata da JS con la formattazione completa -->
+</section>
+</main>
+
+
+<script type="module">
+import { squadre } from './js/data.js';
+
+
+const sezione = document.querySelector('#sezione-squadre');
+sezione.innerHTML = '';
+
+
+squadre.forEach(sq => {
+const divSquadra = document.createElement('div');
+divSquadra.classList.add('card', 'mb-6', 'p-4', 'rounded-2xl', 'shadow');
+
+
+const nomeSquadra = document.createElement('h2');
+nomeSquadra.textContent = sq.nome;
+nomeSquadra.classList.add('text-xl', 'font-bold', 'mb-2');
+divSquadra.appendChild(nomeSquadra);
+
+
+const table = document.createElement('table');
+table.classList.add('table', 'w-full', 'border-collapse');
+
+
+const thead = document.createElement('thead');
+thead.innerHTML = '<tr><th class="text-left">Giocatori</th></tr>';
+table.appendChild(thead);
+
+
+const tbody = document.createElement('tbody');
+sq.giocatori.forEach(g => {
+const tr = document.createElement('tr');
+tr.innerHTML = `<td class="py-1">${g.nome}</td>`;
+tbody.appendChild(tr);
+});
+table.appendChild(tbody);
+
+
+divSquadra.appendChild(table);
+sezione.appendChild(divSquadra);
+});
+</script>
 </body>
 </html>
