@@ -1,16 +1,16 @@
 import { squadre } from './data.js';
 
-const container = document.querySelector('#teams-list');
+const container = document.querySelector('#table-squadre tbody');
+container.innerHTML = '';
 
-function render(){
-  container.innerHTML = '';
-  squadre.forEach(s=>{
-    const div = document.createElement('div'); div.className='team-card';
-    const players = s.giocatori.map(g=> `<li>${g.nome};
-    div.innerHTML = `<h3>${s.nome}</h3><ul>${players}</ul>`;
-    container.appendChild(div);
+squadre.forEach(sq => {
+  const trTitolo = document.createElement('tr');
+  trTitolo.innerHTML = `<td colspan="1"><strong>${sq.nome}</strong></td>`;
+  container.appendChild(trTitolo);
+
+  sq.giocatori.forEach(g => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${g.nome}</td>`;
+    container.appendChild(tr);
   });
-}
-
-render();
-
+});
