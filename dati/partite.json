@@ -5,7 +5,9 @@
     "squadraOspite": "I Bomber",
     "golCasa": 2,
     "golOspite": 1,
-    "status": "giocata"
+    "status": "giocata",
+    "data": "Sabato 15/11",
+    "ora": "18:00"
   },
   {
     "giornata": 1,
@@ -13,7 +15,9 @@
     "squadraOspite": "L'Equilibrio",
     "golCasa": null,
     "golOspite": null,
-    "status": "da giocare"
+    "status": "da giocare",
+    "data": "Sabato 15/11",
+    "ora": "19:00"
   },
   {
     "giornata": 1,
@@ -21,102 +25,9 @@
     "squadraOspite": "Centrocampo Forte",
     "golCasa": null,
     "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 2,
-    "squadraCasa": "I Bomber",
-    "squadraOspite": "Centrocampo Forte",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 2,
-    "squadraCasa": "L'Equilibrio",
-    "squadraOspite": "Real Scommessa",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 2,
-    "squadraCasa": "I Titanici",
-    "squadraOspite": "I Gladiatori",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 3,
-    "squadraCasa": "I Gladiatori",
-    "squadraOspite": "I Bomber",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 3,
-    "squadraCasa": "Real Scommessa",
-    "squadraOspite": "I Titanici",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 3,
-    "squadraCasa": "Centrocampo Forte",
-    "squadraOspite": "L'Equilibrio",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 4,
-    "squadraCasa": "I Bomber",
-    "squadraOspite": "L'Equilibrio",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 4,
-    "squadraCasa": "I Titanici",
-    "squadraOspite": "Centrocampo Forte",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 4,
-    "squadraCasa": "I Gladiatori",
-    "squadraOspite": "Real Scommessa",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 5,
-    "squadraCasa": "Real Scommessa",
-    "squadraOspite": "I Bomber",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 5,
-    "squadraCasa": "Centrocampo Forte",
-    "squadraOspite": "I Gladiatori",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
-  },
-  {
-    "giornata": 5,
-    "squadraCasa": "L'Equilibrio",
-    "squadraOspite": "I Titanici",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
+    "status": "da giocare",
+    "data": "Sabato 15/11",
+    "ora": "20:00"
   }
+  // ... e così via per tutte le altre partite
 ]
