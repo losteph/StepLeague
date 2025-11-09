@@ -3,9 +3,9 @@
     "giornata": 1,
     "squadraCasa": "I Titanici",
     "squadraOspite": "I Bomber",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare"
+    "golCasa": 2,
+    "golOspite": 1,
+    "status": "giocata"
   },
   {
     "giornata": 1,
