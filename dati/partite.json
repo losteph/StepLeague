@@ -29,5 +29,15 @@
     "data": "Sabato 15/11",
     "ora": "20:00"
   }
-  // ... e così via per tutte le altre partite
+
+  {
+    "giornata": 2,
+    "squadraCasa": "Real Scommessa",
+    "squadraOspite": "Equilico",
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare",
+    "data": "Sabato 15/11",
+    "ora": "20:00"
+  }
 ]
