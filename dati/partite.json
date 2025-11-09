@@ -1,0 +1,26 @@
+[
+  {
+    "giornata": 1,
+    "squadraCasa": "Squadra A",
+    "squadraOspite": "Squadra B",
+    "golCasa": 2,
+    "golOspite": 1,
+    "status": "giocata"
+  },
+  {
+    "giornata": 1,
+    "squadraCasa": "Squadra C",
+    "squadraOspite": "Squadra D",
+    "golCasa": 1,
+    "golOspite": 1,
+    "status": "giocata"
+  },
+  {
+    "giornata": 2,
+    "squadraCasa": "Squadra A",
+    "squadraOspite": "Squadra C",
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare"
+  }
+]
