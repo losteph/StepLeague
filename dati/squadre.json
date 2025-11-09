@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "Squadra A",
+    "rosa": [
+      { "nome": "Mario Rossi", "ruolo": "Attaccante" },
+      { "nome": "Paolo Bianchi", "ruolo": "Portiere" },
+      { "nome": "Giuseppe Neri", "ruolo": "Difensore" }
+    ]
+  },
+  {
+    "nome": "Squadra B",
+    "rosa": [
+      { "nome": "Luca Verdi", "ruolo": "Centrocampista" },
+      { "nome": "Marco Gialli", "ruolo": "Attaccante" }
+    ]
+  }
+]
