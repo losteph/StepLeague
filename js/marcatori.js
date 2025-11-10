@@ -18,7 +18,7 @@ async function caricaMarcatori() {
                     <td>${index + 1}</td>
                     <td>${p.nome}</td>
                     <td>${p.squadra}</td>
-                    <td>${p.gol}</td>
+                    <td><strong>${p.gol}</strong></td>
                     <td>${p.assist}</td>
                     <td>${p.ammonizioni}</td>
                     <td>${p.espulsioni}</td>
