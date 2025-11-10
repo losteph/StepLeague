@@ -26,7 +26,6 @@ async function caricaPartite() {
                 ? `${partita.golCasa} - ${partita.golOspite}` 
                 : 'vs';
 
-            // NUOVO: Blocco per data e ora
             let dateTimeHtml = '';
             if (partita.data && partita.ora) {
                 dateTimeHtml = `
@@ -37,7 +36,6 @@ async function caricaPartite() {
                 `;
             }
 
-            // NUOVO: HTML della partita aggiornato
             giornataHtml += `
                 <div class="match">
                     <div class="match-info">
